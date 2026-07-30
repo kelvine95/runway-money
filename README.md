@@ -20,6 +20,13 @@ Plus **Shift ROI**: for a daily earner, the biggest budget lever isn't spending 
 work you say yes to*. Runway prices your own history per hour by weekday, shift type, and
 employer, and quantifies the upside of trading your weakest slot for your best one.
 
+**Life Pulse** puts the worker inside the economy around them. It calculates personalized
+inflation from their actual essential-spending mix, compares observed take-home pay with their
+city's living wage, translates inflation drag into shifts per month, and shows official
+Canada/Alberta and US reference points. A private, local daily check-in adds adaptive
+micro-missions: surplus days invite tiny buffer moves; lean days prioritize protection and
+wellbeing rather than pressuring the worker to save.
+
 ## Research that shaped the design
 
 **Where existing products stop (reviewed July 2026):**
@@ -37,6 +44,14 @@ employer, and quantifies the upside of trading your weakest slot for your best o
 - **Even** (the app that pioneered "Okay to Spend" + paycheck smoothing for hourly workers)
   validated this exact need before shutting down; nothing mainstream filled the gap for
   daily/gig earners.
+- **Macroeconomic baseline**: July 2026 official releases show Alberta CPI at 3.4% and
+  unemployment at 7.0%. Canada-wide transportation rose 6.7%, groceries 3.9%, and gasoline
+  20.5% year over year. Alberta's minimum wage remains $15/hour, while 2025 living-wage
+  estimates range from $18.15 in Medicine Hat to $26.50 in Calgary.
+- **Ethical habit design**: behavioral-finance research supports tiny daily actions, visible
+  progress, and nudges timed to income surplus. It also warns that fixed savings prompts during
+  lean periods can increase stress and disengagement, so Runway changes the mission rather than
+  punishing a broken streak.
 
 **What the dataset says (synthetic cohort, 220 Alberta workers, Apr–Jul 2026):**
 
@@ -81,6 +96,9 @@ anchored at the first observed balance.
 - **Advance Audit** = effective APR (`fee ÷ amount × 365 ÷ days outstanding`), request timing
   relative to the next rent due date, annualized fee pace, and the steady-paycheck
   counterfactual.
+- **Personal inflation** = official Canadian category inflation weighted by the worker's own
+  essential transaction shares. Macro releases are displayed as a dated context layer and are
+  not injected into the historical forecast, avoiding hindsight leakage.
 
 ## Live demo
 

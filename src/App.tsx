@@ -9,9 +9,11 @@ import PaycheckView from "./views/PaycheckView";
 import RunwayView from "./views/RunwayView";
 import ShiftsView from "./views/ShiftsView";
 import AdvancesView from "./views/AdvancesView";
+import PulseView from "./views/PulseView";
 
 const TABS = [
   { id: "today", title: "Today", desc: "Safe to spend right now" },
+  { id: "pulse", title: "Life Pulse", desc: "Economy, energy & daily wins" },
   { id: "paycheck", title: "Steady Paycheck", desc: "Your volatility, smoothed" },
   { id: "runway", title: "Bill Runway", desc: "30-day forecast, in shifts" },
   { id: "shifts", title: "Shift ROI", desc: "Which work actually pays" },
@@ -135,6 +137,7 @@ export default function App() {
 
       <main className="main">
         {tab === "today" && <TodayView model={model} />}
+        {tab === "pulse" && <PulseView model={model} />}
         {tab === "paycheck" && <PaycheckView model={model} />}
         {tab === "runway" && <RunwayView model={model} />}
         {tab === "shifts" && <ShiftsView model={model} />}
