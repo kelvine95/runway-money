@@ -18,7 +18,6 @@ import {
 } from "../lib/economicContext";
 import { computeSafeToSpend } from "../lib/safeToSpend";
 import { money, money0, num, pct } from "../lib/format";
-import { formatDateLong } from "../lib/dates";
 import { Badge, Callout, Card, ProgressBar, StatCard } from "../components/ui";
 import { tooltipStyle } from "./TodayView";
 
