@@ -82,7 +82,11 @@ anchored at the first observed balance.
   relative to the next rent due date, annualized fee pace, and the steady-paycheck
   counterfactual.
 
-## Run it
+## Live demo
+
+**https://kelvine95.github.io/runway-money/**
+
+## Run it locally
 
 ```bash
 npm install
