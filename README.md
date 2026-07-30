@@ -104,6 +104,14 @@ anchored at the first observed balance.
 
 **https://kelvine95.github.io/runway-money/**
 
+## Presentation
+
+A slide-by-slide walkthrough of the software — every module annotated with worker W-0046's
+real computed numbers — lives at
+[`docs/runway-software-walkthrough.pptx`](docs/runway-software-walkthrough.pptx).
+It is generated from the app screenshots in `docs/screenshots/` by `scripts/build_deck.py`
+(requires `python-pptx`).
+
 ## Run it locally
 
 ```bash
